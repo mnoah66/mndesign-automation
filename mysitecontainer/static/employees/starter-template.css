@@ -1,0 +1,21 @@
+body {
+  padding-top: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.starter-template {
+  padding: 10px 15px;
+  text-align: left;
+  -webkit-box-shadow: -20px 0 9px 0 #545454;
+  box-shadow: -4px 0 9px 0 #545454;
+  background-color: #f2f2f2;
+}
+.mainfooter {
+    padding-top: 8px;
+    text-align: center;
+}
+
+div.contact-form ul {
+    list-style: none;
+    margin: 10;
+    padding: 0;
+}

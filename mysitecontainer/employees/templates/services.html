@@ -1,0 +1,61 @@
+{% extends "basetesting.html" %}
+{% load staticfiles %}
+
+{% block title %}Services{% endblock %}
+{% block nav %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/home/">MN Design/Automation</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/home/">Home</a></li>
+            <li class="active"><a href="/services/">Services</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </nav>
+    {% endblock %}
+
+
+
+
+
+{% block content %}
+<div>
+    <h1 align="center">Things</h1>
+       <p>
+            <p>Simplistic "get it done" approach.</p>
+            <ul>
+                <li>SMTP - integrated email systems within your application, website, or local environment.</li>
+                <li>Django - Websites like this one built with Python/Django.</li>
+                <li>Openpyxl - automated systems to interact with Excel workbooks.</li>
+                <li>SMS - Text message notification systems <a href='/contact/'><strong>Click here for text message alert demo</strong></a></li>
+                <li>Etc...</li>
+            </ul>
+
+            <ul>
+                <li>Spreadsheets - Custom formatting and design to meet your needs.</li>
+                <li>VBA & Macros - Automated tasks and VBA programming to eliminate manual, time consuming tasks.</li>
+                <li>Formulas - advanced formulas including VLOOKUP, INDEX/MATCH, CONCATENATE, SUM, COUNT, and variations of IF, to name a few.</li>
+                <li>Userforms - Custom userform design to aid in the data entry process.  Users do not even have to see the spreadsheet to enter/manipulate data.</li>
+            </ul>
+
+            <p>Integrate POP, SMTP or IMAP systems into your existing environment, website, or applications.</p>
+        </p>
+
+    <hr>
+
+</div>
+{% endblock %}

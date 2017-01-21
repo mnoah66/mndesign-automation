@@ -1,0 +1,12 @@
+{% extends 'basetesting.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <p>To see a demo of the SMS program, you must first login.</p>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">CONTINUE</button>
+  </form>
+{% endblock %}

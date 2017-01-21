@@ -1,0 +1,30 @@
+{% extends "basetesting.html" %}
+
+{% block title %}Django/Twilio SMS{% endblock %}
+<html>
+<body>
+
+
+	{% block content %}
+    {% if form.errors %}
+
+        <p style="color: red;">
+            Please correct the error{{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+
+    <div class="smsform">
+        <h2>SMS Demo</h2>
+            <form action="" method="post">
+                <table>
+                    {{ form.as_table }}
+                </table>
+                {% csrf_token %}
+                <input type="submit" value="Submit">
+            </form>
+    </div>
+    {% endblock %}
+
+
+</body>
+</html>

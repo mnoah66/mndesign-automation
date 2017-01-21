@@ -1,0 +1,26 @@
+{% extends "basetesting.html" %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'employees/main.css' %}"/>
+</head>
+
+
+<body>
+	<div class="main-header">
+		<h1><a href='/home/'>MN's Django Site</a></h1>
+    </div>
+    {% block content %}
+        <div class="mainsection">
+            <p><a href="/home/">HOME</p></p>
+            <p><a href="/contact/">SMS DEMO</p></p>
+        </div>
+    {% endblock %}
+
+
+</body>
+</html>
