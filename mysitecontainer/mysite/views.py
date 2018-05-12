@@ -77,7 +77,7 @@ def contactexisiting(request):
                 cd = form.cleaned_data
                 for to_groups in cd['togroup']:
                     recipients = employees.objects.filter(group=to_groups)
-                    client = twilio.rest.TwilioRestClient('AC71641f236c273d84e7d1d570370b53ac', '7f648ae24da547ad0b7e159bcbe9596d')
+                    client = twilio.rest.TwilioRestClient('twilioCredentialss', 'twilioCredentials')
                     for recipient in recipients:
                         client.messages.create(body=cd['message'], to=recipient.phone_number, from_='+19733595858')
 
